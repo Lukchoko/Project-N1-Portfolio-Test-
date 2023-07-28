@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Website N1</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Capture - Copy.PNG" alt="">
+
+        <nav>
+
+            <ul>
+                <li class="one"><a href="index.html">Home</a></li>
+                <li class="two"><a href="about.html">About Me</a></li>
+                <li class="three"><a href="#">Contact</a></li>
+                <img class="dark" src="img/moon.png" id="icon">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> lukchoko2008@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> 568-88-88-93</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ghostoftenjiku"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/luka-chokoshvili-1292a3265/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/lukachokoshvili_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "img/sun.png";
+            } else {
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

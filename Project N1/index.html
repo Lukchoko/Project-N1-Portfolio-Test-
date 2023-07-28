@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Website N1</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Capture - Copy.PNG" alt="">
+
+        <nav>
+
+            <ul>
+                <li class="one"><a href="index.html">Home</a></li>
+                <li class="two"><a href="about.html">About Me</a></li>
+                <li class="three"><a href="contact.html">Contact</a></li>
+                <img class="dark" src="img/moon.png" id="icon">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="index">
+
+
+            <div class="inbex">
+                <h1 class="first">Front-End Full Time Developer 👋</h1>
+                <p class="forst">Hello everybody, my name is Luka Chokoshvili, I am a full time Front <br>
+                    -end Developer and I'm trying to make a living out of this profession.
+                
+                     <div class="icons">
+                    
+                </a>
+                </p>
+            </div>
+            <br>
+             
+
+
+                </div>
+
+            <img class="me" src="img/Businessman-Transparent.png" alt="">
+
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+    <footer></footer>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "img/sun.png";
+            }else{
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

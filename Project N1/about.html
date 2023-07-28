@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Website N1</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Capture - Copy.PNG" alt="">
+
+        <nav>
+            
+            <ul>
+                <li class="one"><a href="index.html">Home</a></li>
+                <li class="two"><a href="#">About Me</a></li>
+                <li class="three"><a href="contact.html">Contact</a></li>
+                <img class="dark" src="img/moon.png" id="icon">
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="about-me">
+            <div class="pic">
+                <img src="img/1.jpg">
+            </div>
+            <div class="text">
+                <h1>About Me</h1>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos pariatur, consectetur nulla molestias dolores exercitationem repudiandae itaque placeat, velit praesentium sed, labore molestiae voluptate est sit unde commodi nostrum? Voluptates!
+                Voluptate veniam totam explicabo dolore placeat culpa iste officia voluptatibus! Deserunt quod quidem amet eum voluptas aliquam eos eius vel corporis, deleniti ipsam molestias odio accusamus aliquid doloremque eligendi natus!
+                Placeat possimus soluta molestias deleniti iste magnam temporibus, beatae, nisi, labore repellendus voluptatem nobis rem? Quam in labore adipisci saepe inventore veniam obcaecati exercitationem quas ipsum. Aperiam facilis maiores corrupti.
+                Veritatis dolorem aperiam iusto eveniet amet ex, quae pariatur officia omnis perferendis doloremque, fugiat quos unde sunt iure saepe nam totam quisquam. </p>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "img/sun.png";
+            }else{
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
